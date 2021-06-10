@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ask_for_error_log">An unexpected error has occurred.\nPlease help us by providing error
+        details.\nThank you for your support.
+    </string>
+    <string name="email_welcome_note">Dear Support Team,\n\nApplication is just crashed, please check following error
+        logs for more details.\n\n\n
+    </string>
+</resources>

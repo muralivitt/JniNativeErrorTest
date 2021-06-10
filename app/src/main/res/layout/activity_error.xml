@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".error.ErrorActivity">
+    
+    
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="32dp"
+        android:layout_marginTop="?actionBarSize"
+        android:src="@drawable/ic_launcher_foreground" />
+    
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Something went wrong"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFF" />
+    
+    
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:text="@string/ask_for_error_log"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#FFF" />
+    
+    
+    <LinearLayout
+        android:id="@+id/llActionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSubTitle"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center"
+            android:text="Share" />
+        
+        <Button
+            android:id="@+id/tvView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:text="View" />
+        
+        <Button
+            android:id="@+id/tvCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Copy" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/tvClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="CLOSE"/>
+
+</LinearLayout>
